@@ -2,7 +2,6 @@
  * Created by lhyin on 18/06/30.
  */
 /*global jQuery IosSelect template escape unescape*/
-'use strict';
 (function ($) {
     $('#ceshiid0').html('调用了js');
     // var w = document.documentElement.clientWidth;
