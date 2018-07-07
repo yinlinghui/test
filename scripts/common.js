@@ -4,13 +4,13 @@
 /*global jQuery IosSelect template escape unescape*/
 'use strict';
 (function ($) {
-    alert('能弹出来吗');
+    $('#ceshiid0').html('调用了js');
     // var w = document.documentElement.clientWidth;
     var w = document.documentElement.clientWidth || document.body.clientWidth;
-    alert(w);
+    $('#ceshiid').html(w);
     w > 750 ? w = 750 : w;
     var ele = document.getElementsByTagName('html')[0], size = w / 750 * 100;
-    alert(size);
+    $('#ceshiid2').html(size);
     ele.style.fontSize = size + 'px';
     window.onresize = function () {
         w = document.documentElement.clientWidth || document.body.clientWidth;
