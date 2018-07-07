@@ -4,19 +4,21 @@
 /*global jQuery IosSelect template escape unescape*/
 'use strict';
 (function ($) {
-    var w = document.documentElement.clientWidth;
+    alert('能弹出来吗');
+    // var w = document.documentElement.clientWidth;
+    var w = document.documentElement.clientWidth || document.body.clientWidth;
     alert(w);
     w > 750 ? w = 750 : w;
     var ele = document.getElementsByTagName('html')[0], size = w / 750 * 100;
     alert(size);
     ele.style.fontSize = size + 'px';
     window.onresize = function () {
-        w = document.documentElement.clientWidth;
+        w = document.documentElement.clientWidth || document.body.clientWidth;
         w > 750 ? w = 750 : w;
         size = w / 750 * 100;
         ele.style.fontSize = size + 'px';
     };
-    
+
 
     // 初始化全局变量
     var vilghtData = []; //航段信息
