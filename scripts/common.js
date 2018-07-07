@@ -16,6 +16,7 @@
         size = w / 750 * 100;
         ele.style.fontSize = size + 'px';
     };
+    
 
     // 初始化全局变量
     var vilghtData = []; //航段信息
